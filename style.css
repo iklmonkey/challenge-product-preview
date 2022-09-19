@@ -1,0 +1,203 @@
+html {
+    background-color: hsl(30, 38%, 92%);
+}
+
+h1 {
+    font-family: 'Fraunces', serif;
+    font-size: 2.5em;
+    color: hsl(212, 21%, 14%);
+    padding: auto 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: hsl(228, 12%, 48%);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    letter-spacing: 0.3em;
+    line-height: 1.5;
+    padding: auto 10px;
+    margin: auto;
+}
+
+p {
+    color: hsl(228, 12%, 48%);
+    font-size: 1.2em;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.5em;
+    padding: auto 10px;
+    margin-bottom: none;
+    border-bottom: none;
+}
+
+.main-container {
+    background-color: white;
+    border-radius: 10px 10px 10px 10px;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    min-width: none;
+    max-width: 100vh;
+}
+
+.container-image {
+    background-image: url('./images/image-product-mobile.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px 10px 0px 0px;
+    height: 50%;
+    position: relative;
+}
+
+.container-text {
+    background-color: white;
+    border-radius: 0px 0px 10px 10px;
+    height: 50%;
+    padding: 15px;
+    margin: 15px;
+}
+
+.container-price {
+    display: flex;
+    flex-direction: row;
+    width: 85%;
+    padding: 0;
+}
+
+.container-price .price-sale {
+    color: hsl(158, 36%, 37%);
+    font-family: 'Fraunces', serif;
+    font-size: 2.5em;
+    text-align: left;
+    width: 50%;
+}
+
+.container-price .price-retail {
+    color: hsl(228, 12%, 48%);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
+    text-decoration: line-through;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    margin-left: 10%;
+}
+
+.add-to-cart {
+    background-color: hsl(158, 36%, 37%);
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 1em;
+    margin: auto;
+    padding: 15px;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+}
+
+button>img {
+    padding-right: 10px;
+}
+
+.add-to-cart:hover {
+    /*background-color: hsl(159, 64%, 26%);*/
+    background-color: hsl(159, 64%, 15%);
+}
+
+@media (min-width: 600px) {
+    html {
+        padding: auto;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+    }
+
+    body {
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    h1 {
+        margin: auto;
+        line-height: 1;
+        padding-bottom: 25px;
+    }
+
+    h2 {
+        margin: auto;
+        padding-bottom: 25px;
+    }
+
+    p {
+        text-align: left;
+        font-size: 1.1em;
+        margin: auto;
+        padding-bottom: 25px;
+    }
+
+    .main-container {
+        background-color: white;
+        border-radius: 10px 10px 10px 10px;
+        display: flex;
+        flex-direction: row;
+        height: 500px;
+        min-width: none;
+        width: 640px;
+        /*  position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-100%, -100%); */
+    }
+
+    .container-image {
+        background-image: url('./images/image-product-desktop.jpg');
+        background-size: cover;
+        background-position: center;
+        border-radius: 10px 0px 0px 10px;
+        height: 100%;
+        width: 50%;
+    }
+
+    .container-text {
+        background-color: white;
+        margin: auto;
+        border-radius: 0px 10px 10px 0px;
+        width: 50%;
+        flex-direction: column;
+        display: inline-block;
+        height: auto;
+        padding-bottom: 0;
+        margin-top: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
+
+    }
+
+    .container-price {
+        display: inline-flex;
+        flex-direction: row;
+        width: 85%;
+        padding-bottom: 25px;
+        margin: auto;
+    }
+
+    .container-price .price-retail {
+        padding-left: 30px;
+    }
+
+    .add-to-cart {
+        margin: auto;
+    }
+}
